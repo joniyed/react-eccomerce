@@ -1,5 +1,7 @@
 import {
-    CREATE_CATEGORY_URL, PROUDUCT_URL
+    CATEGORY_URL,
+    CREATE_CATEGORY_URL,
+    PROUDUCT_URL
 } from '../config/Config'
 
 export const createCategory = (token, userId, Category) => {
@@ -26,6 +28,20 @@ export const createProduct = (token, userId, product) => {
             Authorization: `Bearer ${token}`,
         },
         body: product
+    }).then(res => {
+        return res.json();
+    }).catch(err => {
+        console.log(err.message);
+    })
+}
+
+
+export const getCategory = () => {
+    return fetch(`${CATEGORY_URL}`, {
+        method: "get",
+        headers: {
+            Accept: "application/json",
+        },
     }).then(res => {
         return res.json();
     }).catch(err => {

@@ -5,6 +5,7 @@ export const SIGNUP_URL = `${ROOT_URL}/api/${VERSION}/auth/signup`;
 export const SIGNIN_URL = `${ROOT_URL}/api/${VERSION}/auth/signin`;
 export const SIGNOUT_URL = `${ROOT_URL}/api/${VERSION}/auth/signout`;
 
-export const PROUDUCT_URL = `${ROOT_URL}/api/${VERSION}/pruduct`;
+export const PROUDUCT_URL = `${ROOT_URL}/api/${VERSION}/product`;
 
 export const CREATE_CATEGORY_URL = `${ROOT_URL}/api/${VERSION}/category`;
+export const CATEGORY_URL = `${ROOT_URL}/api/${VERSION}/category`;

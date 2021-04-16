@@ -8,7 +8,7 @@ import DashBoard from './user/UserDashBoard';
 import AdminRoute from './auth/AdminRoute';
 import AdminDashBoard from './admin/AdminDashboard';
 import AddCategory from './admin/AddCategory';
-import AddProduct from './admin/AddProduct'
+import AddProduct from './admin/AddProduct';
 
 const Routes = () => {
     return (
